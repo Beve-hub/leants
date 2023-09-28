@@ -3,7 +3,6 @@ import Eventbind from './component/Eventbind';
 import Form from './component/Form';
 import FunctionClick from './component/FunctionClick';
 import Greeting from './component/Greeting';
-import LifecycleA from './component/LifecycleA';
 import NameList from './component/NameList';
 import ParentComponent from './component/ParentComponent';
 import Stae from './component/Stae';
@@ -28,7 +27,6 @@ function App() {
       <ParentComponent/>
       <Tipping/>
       <UserGreeting/>
-      <LifecycleA/>
       <NameList/>
       <Form/>
     </div>
