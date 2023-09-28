@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Greeting = (props) => {
-    const {name, hero} = props 
+    const {name, hero} = props   //destructuring a props object
     
   return (
     <div>

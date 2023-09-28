@@ -1,33 +1,21 @@
-import React, { Component} from 'react';
+import React, { useState } from 'react'
 
-class Stae extends Component {
+const Stae = () => {
+    const [count, setCount] = useState(0);
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            count: 0
-        }
+    const increment = () => {
+        setCount(prevCount => prevCount + 1); 
     }
-
-    Increment () {
-        this.setState ({ 
-            count: this.state.count + 1
-         })
-    }
-
-    render() {
-        return (
-            <div>
-                <div>count - {this.state.count}</div>
-                <button onClick={() => this.Increment()}>Increment</button>
-            </div>
-        )
-    }
+     const decrement = () => {
+        setCount(prevCount => prevCount - 1);
+     }
+  return (
+    <div>
+      <p>count : {count}</p>
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
+    </div>
+  )
 }
 
 export default Stae
-
-
-
- 

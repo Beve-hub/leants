@@ -1,5 +1,6 @@
 import { Component} from 'react'
 import ChildComponent from './ChildComponent';
+ 
 
 class ParentComponent extends Component {
 
@@ -13,8 +14,8 @@ class ParentComponent extends Component {
         this.greetParent = this.greetParent.bind(this);
     }
 
-    greetParent() {
-        alert(`hello ${this.state.parentName}`);
+    greetParent(childName) {
+        alert(`hello ${this.state.parentName} from ${childName}`); 
     }
 
     render() {
@@ -26,4 +27,4 @@ class ParentComponent extends Component {
     }
 }
 
-export default ParentComponent
+export default ParentComponent 
