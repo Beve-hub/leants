@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react'
 
 
-const initialState = 0
+const initialState = 0;
 
 const reducer = (state, action) => {
    
@@ -23,6 +23,7 @@ function Counter5() {
   
   return (
     <div>
+        <div>Count - {count}</div>
       <button onClick={() => dispatch('increment')}>increment</button>
       <button onClick={() => dispatch('decrement')}>decrement</button>
       <button onClick={() => dispatch('reset')}>Reset</button>
