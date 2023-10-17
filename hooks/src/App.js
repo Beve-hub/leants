@@ -18,7 +18,6 @@ import InputFoc from './component/InputFoc';
 
 
 
-
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
@@ -38,8 +37,8 @@ function App() {
          <ComponentC/>
          </ChannelContext.Provider>
       </UserContext.Provider>
-      <Counter5/>
-      <Counter6/>*/}
+      <Counter5/>*/}
+      <Counter6/>
       <DatafetchingOne/>
       <Parent/>
       <FocusInput/>
