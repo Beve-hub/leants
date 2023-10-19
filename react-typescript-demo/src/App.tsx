@@ -10,6 +10,10 @@ import Button from './component/Button';
 import Input from './component/Input';
 import Container from './component/Container';
 import User from './component/state/User';
+import Counter from './component/state/Counter';
+import { ThemeContextProvider } from './component/context/ThemeContext';
+import { Box } from './component/context/Box';
+import { UserContextProvider } from './component/context/UserContext';
 
 
 function App() {
@@ -46,6 +50,14 @@ function App() {
      <Input value='' handleChange={(event) => console.log(event)} />
      <Container styles={{border: '1px solid black', padding: '1rem',}}/>
      <User/>
+     <Counter/>
+     <ThemeContextProvider>
+       <Box/>
+     </ThemeContextProvider>
+     <UserContextProvider>
+      <User/>
+     </UserContextProvider>
+     
     </div>
   );
 }
